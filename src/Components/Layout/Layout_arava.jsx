@@ -43,6 +43,7 @@ const Layout_arava = () => {
 
 
     React.useEffect(() => {
+
         if (User_type === "admin") setLayoutData(AdminLayout);
         else if (User_type === "moderator") setLayoutData(ModerateLayout);
         else if (User_type === "seller") setLayoutData(SellerLayout);
