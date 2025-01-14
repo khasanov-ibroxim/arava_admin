@@ -19,12 +19,10 @@ const SingleShop = () => {
         getSingleShopWork
     } = shopsStore();
 
-    const currentShop = allShops.find(item => item.id === Number(shop_id)) || {};
-
     const [changedShopData, setChangedShopData] = useState({
-        name: currentShop?.name,
-        photo: currentShop?.photo,
-        shop_category_id: currentShop?.shop_category_id,
+        name: '',
+        photo: '',
+        shop_category_id: '',
         work: {
             work_id: '',
             open_time: '',
@@ -32,6 +30,7 @@ const SingleShop = () => {
             week: []
         }
     });
+
 
     const [open, setOpen] = useState(false);
     const [selectedProducts, setSelectedProducts] = useState([]);
@@ -109,6 +108,7 @@ const SingleShop = () => {
         },
     };
 
+
     useEffect(() => {
         if (allShops.length === 0 || !currentShop) {
             getAllShops();
@@ -116,11 +116,28 @@ const SingleShop = () => {
         if (allShopsMainCategory.length === 0) {
             getAllShopsMainCategory();
         }
-    }, [user_id, getAllShops, getAllShopsMainCategory, currentShop]);
+    }, []);
 
     useEffect(() => {
         getSingleShopWork(shop_id);
-    }, [shop_id, user_id]);
+    }, [shop_id]);
+
+    useEffect(() => {
+        const currentShop = allShops.find(item => item.id === Number(shop_id));
+        if (currentShop) {
+            setChangedShopData({
+                name: currentShop.name || '',
+                photo: currentShop.photo || '',
+                shop_category_id: currentShop.shop_category_id || '',
+                work: currentShop.work || {
+                    work_id: '',
+                    open_time: '',
+                    close_time: '',
+                    week: []
+                }
+            });
+        }
+    }, [allShops, shop_id]);
 
     return (
         <div>
