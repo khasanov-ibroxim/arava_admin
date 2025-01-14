@@ -1,0 +1,81 @@
+.single_shop_header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    max-height: 400px;
+}
+
+.single_shop_header_left {
+    width: 30%;
+}
+
+.single_shop_header_left img {
+    height: 100%;
+    width: 100%;
+}
+
+.single_shop_header_right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.single_shop_header_input {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+.single_shop_header_input button , .single_shop_header_left button{
+    width: 100%;
+    padding: 10px;
+    background: #2D3748;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.single_shop_header_input p{
+    color: white;
+}
+.single_shop_header_input:last-child{
+    margin-top: 10px;
+}
+
+.single_shop_content{
+    margin-top: 75px;
+}
+
+.single_shop_header_input .week-checkbox-group input {
+    display: none !important;
+}
+
+.week-checkbox-group .checkbox-label {
+    display: inline-block;
+    border-radius: 6px;
+
+    background: #dddddd;
+    height: 60px;
+    width: 12%;
+    margin-right: 10px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+
+
+}
+
+.week-checkbox-group .checkbox-label.activeDay {
+    background: #1E293B;
+    color: #ffffff;
+}
+
+.work_time{
+    width: 100%;
+    display: flex;
+}
+.ant-upload-list {display: none!important;}

@@ -1,0 +1,109 @@
+.shops-container {
+    background-color: #0f172a; /* To'liq konteyner uchun fon */
+    padding: 20px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.shops_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.dark-table {
+    background-color: #1e293b !important; /* Jadvalning fon rangi */
+    color: #ffffff !important;
+}
+
+.dark-table .ant-table-thead > tr > th {
+    background-color: #334155 !important; /* Sarlavha uchun fon rangi */
+    color: #ffffff !important;
+    border-color: #475569;
+}
+
+.dark-table .ant-table-tbody > tr > td {
+    background-color: #1e293b !important; /* Jadvalning tarkib fon rangi */
+    color: #ffffff !important;
+    border-color: #475569;
+}
+
+.dark-table .ant-table-bordered .ant-table-cell {
+    border-color: #475569 !important; /* Chegara rangi */
+}
+
+/* Pagination uchun umumiy konteyner */
+.dark-table .ant-pagination {
+    background-color: #1e293b; /* Pagination fon rangi */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Pagination elementlari (sahifa raqamlari) */
+.dark-table .ant-pagination-item {
+    background-color: #334155; /* Tugmalar fon rangi */
+    border-color: #475569;
+}
+
+.dark-table .ant-pagination-item a {
+    color: #ffffff; /* Sahifa raqamlari matn rangi */
+}
+
+.dark-table .ant-pagination-item-active {
+    background-color: #1e40af; /* Tanlangan sahifa fon rangi */
+    border-color: #1e40af;
+}
+
+.dark-table .ant-pagination-item-active a {
+    color: #ffffff !important; /* Tanlangan sahifa matn rangi */
+}
+
+/* Oldingi va keyingi tugmalar */
+.dark-table .ant-pagination-prev,
+.dark-table .ant-pagination-next {
+    border-color: #475569;
+}
+
+.dark-table .ant-pagination-prev .ant-pagination-item-link,
+.dark-table .ant-pagination-next .ant-pagination-item-link {
+    background-color: #334155;
+    color: #ffffff;
+    border-color: #475569;
+}
+
+/* Oldingi va keyingi tugmalar hover effekti */
+.dark-table .ant-pagination-prev:hover .ant-pagination-item-link,
+.dark-table .ant-pagination-next:hover .ant-pagination-item-link {
+    background-color: #475569;
+    color: #ffffff;
+}
+
+.dark-table {
+    width: 100%;
+    background-color: #2D3748;
+    border-radius: 10px;
+}
+
+.dark-table .ant-table-thead > tr > th,
+.dark-table .ant-table-tbody > tr > td {
+    text-align: center;
+    color: #ffffff;
+}
+
+.dark-table .ant-table-tbody > tr > td a {
+    text-decoration: none;
+    color: #ffffff !important;
+    background: #0f172a;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.dark-table .ant-table-tbody > tr > td a:hover{
+    background: #2D3748;
+}

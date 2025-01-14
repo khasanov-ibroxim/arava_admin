@@ -12,3 +12,6 @@ body{
     background: rgb(15, 23, 42);
 }
 
+.ant-empty-description{
+    color: white !important;
+}

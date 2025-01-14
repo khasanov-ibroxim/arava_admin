@@ -11,7 +11,7 @@ function App() {
         <>
             <Routes>
 
-                <Route path={LAYOUT} element={<Layout_arava/>}/>
+                <Route path={LAYOUT+"/*"} element={<Layout_arava/>}/>
                 <Route path={LOGIN} element={<Login/>}/>
             </Routes>
         </>

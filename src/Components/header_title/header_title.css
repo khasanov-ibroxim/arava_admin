@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .header_title_component{
-    font-family: "Oswald", serif;
+    margin-bottom: 50px;
+    display: inline-block;
 }
 .header_title_component h1{
     font-size: 30px;

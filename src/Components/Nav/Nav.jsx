@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Nav.css'
-import {IconUser} from "@tabler/icons-react";
+import {UserOutlined} from "@ant-design/icons";
 
 function Nav() {
   const [show, setShow] = useState(false)
@@ -18,7 +18,7 @@ function Nav() {
                 <option value="">UZ</option>
               </select>
               <div onClick={() => setShow(!show)} className="foto">
-                <IconUser/>
+                <UserOutlined />
               </div>
               <div className={show ? 'null' : 'profil'}>
                 <p className="name"></p>
